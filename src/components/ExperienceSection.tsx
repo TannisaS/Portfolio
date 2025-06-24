@@ -8,7 +8,15 @@ const ExperienceSection: React.FC = () => {
     <section className="py-20 bg-gray-800" id="experience">
       <div className="container mx-auto px-4">
         <SectionTitle title="Work Experience" />
-        <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> 
+          <ExperienceCard
+            title="SDE Intern"
+            company="WittyHat"
+            period="May 2025 - Present"
+            description="Worked on building intelligent AI-driven presentation tools from the ground up. Designed and developed LangGraph-based workflows that transformed articles into dynamic slide decks with narration, visuals, and exportable presentations. Integrated Azure OpenAI for content generation, ElevenLabs and Azure TTS for multilingual voiceovers, and MoviePy for automated video creation. Focused on end-to-end orchestration, prompt engineering, and system optimization. This role significantly deepened my expertise in AI tooling, workflow automation, and full-stack development across Python, LangChain, and cloud-based APIs."
+            icon={<Briefcase className="w-8 h-8" />}
+            delay={300}
+          />
           <ExperienceCard
             title="R&D Intern"
             company="Encrypta"
